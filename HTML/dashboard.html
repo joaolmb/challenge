@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
             <!-- Barra Lateral -->
-            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light">
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark text-light">
                 <div class="position-sticky">
-                    <h4 class="text-center">Dashboard</h4>
+                    <h4 class="text-center py-4">Dashboard</h4>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">
-                                <i class="fa fa-home"></i> Home
+                                <i class="fa fa-tachometer-alt"></i> Dashboard
                             </a>
                         </li>
                         <li class="nav-item">
@@ -41,49 +42,101 @@
 
             <!-- Conteúdo Principal -->
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <!-- Barra Superior -->
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Bem-vindo ao Dashboard</h1>
+                    <h1 class="h2">Bem-vindo, Usuário!</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                            <button type="button" class="btn btn-outline-primary">Novo Relatório</button>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row">
                     <!-- Card 1 -->
                     <div class="col-md-4">
-                        <div class="card mb-4">
+                        <div class="card mb-4 shadow-sm">
                             <div class="card-body">
-                                <h5 class="card-title">Card 1</h5>
-                                <p class="card-text">Alguma informação ou dados relevantes para o primeiro card.</p>
+                                <h5 class="card-title">Usuários Ativos</h5>
+                                <p class="card-text">Número total de usuários ativos na plataforma.</p>
+                                <h2 class="card-number">1,234</h2>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 2 -->
                     <div class="col-md-4">
-                        <div class="card mb-4">
+                        <div class="card mb-4 shadow-sm">
                             <div class="card-body">
-                                <h5 class="card-title">Card 2</h5>
-                                <p class="card-text">Alguma informação ou dados relevantes para o segundo card.</p>
+                                <h5 class="card-title">Novas Inscrições</h5>
+                                <p class="card-text">Número de novas inscrições no último mês.</p>
+                                <h2 class="card-number">456</h2>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card 3 -->
                     <div class="col-md-4">
-                        <div class="card mb-4">
+                        <div class="card mb-4 shadow-sm">
                             <div class="card-body">
-                                <h5 class="card-title">Card 3</h5>
-                                <p class="card-text">Alguma informação ou dados relevantes para o terceiro card.</p>
+                                <h5 class="card-title">Vendas Totais</h5>
+                                <p class="card-text">Valor total das vendas realizadas.</p>
+                                <h2 class="card-number">$12,345</h2>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <!-- Gráfico ou Dados Adicionais -->
+                    <!-- Gráfico Simulado -->
                     <div class="col-md-12">
-                        <div class="card">
+                        <div class="card mb-4 shadow-sm">
                             <div class="card-body">
-                                <h5 class="card-title">Gráfico ou Dados Adicionais</h5>
-                                <p class="card-text">Espaço para gráficos, tabelas ou outros dados adicionais.</p>
+                                <h5 class="card-title">Desempenho Mensal</h5>
+                                <div class="chart-placeholder">
+                                    <p>Gráfico será exibido aqui</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Tabela de Dados Simulada -->
+                    <div class="col-md-12">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Tabela de Dados</h5>
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nome</th>
+                                            <th>Email</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>João Silva</td>
+                                            <td>joao.silva@example.com</td>
+                                            <td><span class="badge badge-success">Ativo</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Maria Oliveira</td>
+                                            <td>maria.oliveira@example.com</td>
+                                            <td><span class="badge badge-danger">Inativo</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Pedro Santos</td>
+                                            <td>pedro.santos@example.com</td>
+                                            <td><span class="badge badge-success">Ativo</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -92,9 +145,7 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>

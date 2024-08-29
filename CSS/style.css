@@ -20,3 +20,100 @@ body {
     font-size: 14px;
     color: red;
 }
+
+
+/*
+        | Dasboard |
+Estilo para a barra lateral */
+#sidebar {
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #343a40;
+    color: #fff;
+}
+
+#sidebar h4 {
+    color: #fff;
+}
+
+#sidebar .nav-link {
+    color: #ced4da;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+#sidebar .nav-link.active {
+    background-color: #495057;
+    color: #fff;
+}
+
+.card {
+    border-radius: 8px;
+    border: none;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #007bff;
+}
+
+.chart-placeholder {
+    height: 300px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-size: 1.25rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
